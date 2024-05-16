@@ -1,10 +1,9 @@
-#ifndef _GLWFUNCTIONLOADER_HPP
-#define _GLWFUNCTIONLOADER_HPP
 /*-------------------------------------------------------------------------
- * drawElements Quality Program OpenGL Utilities
- * ---------------------------------------------
+ * Khronos OpenGL Conformance Tests
+ * --------------------------------
  *
- * Copyright 2014 The Android Open Source Project
+ * Copyright (c) 2024 Google Inc.
+ * Copyright (c) 2024 The Khronos Group Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,24 +19,13 @@
  *
  *//*!
  * \file
- * \brief Function loader interface.
+ * \brief ES3.2 CTS Activity
  *//*--------------------------------------------------------------------*/
 
-#include "glwDefs.hpp"
+package org.khronos.cts;
 
-namespace glw
+import android.app.NativeActivity;
+
+public class ES32GetTestParamActivity extends NativeActivity
 {
-
-typedef GLW_APICALL void (GLW_APIENTRY* GenericFuncType) (void);
-
-class FunctionLoader
-{
-public:
-	virtual ~FunctionLoader () {}
-
-	virtual GenericFuncType		get			(const char* name) const = 0;
-};
-
-} // glw
-
-#endif // _GLWFUNCTIONLOADER_HPP
+}
