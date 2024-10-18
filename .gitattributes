@@ -13,3 +13,4 @@
 /android/cts/main/src/vk-master-2023-03-01.txt filter=lfs diff=lfs merge=lfs -text
 /android/cts/main/vk-main-2023-03-01/pipeline.txt filter=lfs diff=lfs merge=lfs -text
 /android/cts/main/vk-main-2022-03-01/pipeline.txt filter=lfs diff=lfs merge=lfs -text
+/android/cts/main/src/vk-main-2024-03-01.txt filter=lfs diff=lfs merge=lfs -text
